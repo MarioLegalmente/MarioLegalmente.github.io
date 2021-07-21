@@ -1,0 +1,9 @@
+
+    .social {
+        display: flex;
+        gap: 16px;
+        margin-block-start: 32px;
+       margin-block-end: 16px;
+    }
+    
+    
