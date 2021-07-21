@@ -42,7 +42,7 @@ Si deseas tener una copia  de este proyecto en tu máquina local para propósito
 ```git@github.com:origimario/my-portfolio.git``` 
 
 
-Tecnologías y herramientas utilizadas para el desarrollo de VPlayer™
+Tecnologías y herramientas utilizadas para el desarrollo
 
   - HTML
   
