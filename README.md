@@ -7,7 +7,6 @@ Functional portfolio that shows some projects in which I have participated.
 
 <img width="460px"  src="https://firebasestorage.googleapis.com/v0/b/mfs-api-5e5f4.appspot.com/o/my-profile%2Fassets%2Fimages%2Fdesktop-my-profile.png?alt=media&token=7e358acb-1a8c-468f-a296-03f77e3edc29" />
 
- Es un reproductor de contenido audivisual para implementar en proyectos que requieran las interfaces de usuarios 
  
  ##
 
