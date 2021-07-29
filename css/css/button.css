@@ -14,11 +14,18 @@
 
 }
 
+.button:hover {
+    background-color: #000;
+}
+
 
 .button.is-secondary {
     background-color: unset;
     color: var(--black25);
-    border: 2px solid var(--gray02);
+}
+
+.button.is-secondary:hover  {
+    background-color: rgba(000, 000, 000, 0.1);
 }
 
 
