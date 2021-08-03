@@ -32,16 +32,17 @@
     --white: #FFFFFF;
     --black25: #252525;
     --gray02:  #898989;
-    --purple: #1D65C1;
+    --blue: #1D65C1;
     --coffe: #8C5404;
 
+    --bg: #E8F0FE;
 
     --gradient: linear-gradient(180deg, #FFF8EC 9.46%, rgba(255, 248, 224, 0.438) 298.51%);
 
 }
 
 body {
-    background: var(--gradient);
+    background: var(--bg);
     min-block-size: 100vh;
     font: var(--body1);
     color: var(--black25);
