@@ -281,13 +281,6 @@ p {
   align-items: center;
 }
 
-.logo a {
-  color: var(--first-color);
-  font-weight: bold;
-  font-size: 2rem;
-  text-decoration: none;
-}
-
 .skills-card {
   margin: 1rem auto;
   padding: 1rem;
