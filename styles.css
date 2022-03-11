@@ -30,18 +30,25 @@
   --title-color: #01260E;
   --text-color: #33312E;
   --white-alpha-color: rgba(255, 255, 255, 0.8);
-  --black-alpha_color: rgba(0, 0, 0, 0.7);
+  --black-alpha_color: rgba(0, 0, 0, 0.5);
+
   --max-width: 1200px;
   --header-height: 4rem;
+
+  --box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+
+
 }
 
 /*===== Reset =====*/
 
 html {
+caret-color: transparent;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: var(--Label);
   font-family: var(--fontBase);
+  margin: 0;
 }
 
 *,
@@ -64,6 +71,8 @@ a {
 a:hover {
   opacity: 0.75;
 }
+
+
 
 img{
   max-width: 100%;
@@ -107,7 +116,6 @@ p {
   background-color: var(--second-color);
   border: 0;
   cursor: pointer;
-  outline: thin solid var(--first-color);
 }
 
 .menu-btn svg {
@@ -181,11 +189,13 @@ p {
 
 .box-shdow-1 {
   --drop-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
 }
 
-.btn {
+.btn{
   display: inline-block;
-  border-radius: 0.3rem;
+  border-radius: 10rem;
+  outline: none;
   padding: 0.5rem;
   font-weight: bold;
   width: 200px;
@@ -194,6 +204,7 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: var(--white-color);
+  box-shadow: var(--box-shadow);
 
 }
 
@@ -203,7 +214,50 @@ p {
   max-width: var(--max-width);
 }
 
+.card-info h3, p{
+  width: 100%;
+  height: auto;
+  padding: 0rem 1rem;
+  color: var(--second-color);
+}
 
+.card-info h4{
+  margin: 0.5rem 1rem 0;
+}
+.card-info h4:hover{
+  color: var(--second-color);
+}
+
+.form-input{
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin-block-start: 8px;
+}
+
+.form .btn  {
+display: block;
+margin: 0 auto;
+cursor: pointer;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 1.5rem 0;
+}
+
+
+.btn input {
+  background-color: var(--first-color);
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+}
 
 .none {
   display: none;
@@ -222,6 +276,7 @@ p {
 .sections {
   padding: 2rem 1rem;
 }
+
 .text-center {
   text-align: center;
 }
@@ -254,6 +309,8 @@ p {
 }
 
 .photo-scale_gray {
+  display: block;
+  margin: auto;
   filter: grayscale(1);
 }
 
@@ -262,6 +319,21 @@ p {
 
 .about > article {
   margin-bottom: 2rem;
+}
+
+
+.footer {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  margin: 3rem 0 0rem;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .header {
@@ -281,6 +353,17 @@ p {
   align-items: center;
 }
 
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  margin: 1rem 1rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--gray-light-color);
+  box-shadow: var(--box-shadow);
+}
+
+
+
 .skills-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -298,14 +381,30 @@ p {
   fill: var(--first-color);
 }
 
+  .card-info h3, p{
+  margin: 0;
+
+}
 @media screen and (min-width: 768px) {
-  .skills > .container {
+
+
+  .portfolio > .container {
     display: grid;
     grid-template-columns: repeat(2, 48%);
     justify-content: space-between;
     align-content: center;
   }
 
+  .portfolio .section-title {
+    grid-column: span 2;
+  }
+
+  .skills > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+    align-content: center;
+  }
   .skills .section-title {
     grid-column: span 2;
   }
@@ -320,6 +419,13 @@ p {
     justify-content: space-between;
     align-content: center;
   }
+
+  .form {
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+  }
+
   .header {
     position: sticky;
     top: 0;
