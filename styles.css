@@ -19,14 +19,14 @@
 
   /*===== Color palette =====*/
 
-  --first-color: #05F240;
+  --first-color: #04C233;
   --second-color: #01260E;
   --second-alpha-color: rgba(0, 0, 0, 0.8);
   --white-color: #FFF6E6;
   --gray-light-color: #f5f1ea;
   --gray-color: #66625C;
   --gray-dark-color: #33312E;
-  --link-color: #05F240;
+  --link-color: #04C233;
   --title-color: #01260E;
   --text-color: #33312E;
   --white-alpha-color: rgba(255, 255, 255, 0.8);
@@ -81,6 +81,7 @@ img{
 
 p {
   line-height: 1.5;
+
 }
 
 /*===== Components =====*/
@@ -212,6 +213,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-width);
+
 }
 
 .card-info h3, p{
@@ -222,7 +224,8 @@ p {
 }
 
 .card-info h4{
-  margin: 0.5rem 1rem 0;
+  margin: 0rem 1rem 0.5rem;
+  font-size: 1.2rem;
 }
 .card-info h4:hover{
   color: var(--second-color);
@@ -302,9 +305,6 @@ cursor: pointer;
     text-align: left;
   }
 
-  .text-lg_right {
-    text-align: right;
-  }
 
 }
 
@@ -319,7 +319,13 @@ cursor: pointer;
 
 .about > article {
   margin-bottom: 2rem;
+  text-align: center;
 }
+
+.btn-switch {
+  display: none;
+}
+
 
 
 .footer {
@@ -362,8 +368,6 @@ cursor: pointer;
   box-shadow: var(--box-shadow);
 }
 
-
-
 .skills-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -381,10 +385,7 @@ cursor: pointer;
   fill: var(--first-color);
 }
 
-  .card-info h3, p{
-  margin: 0;
 
-}
 @media screen and (min-width: 768px) {
 
 
@@ -412,13 +413,72 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
-
   .about {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-between;
     align-content: center;
   }
+
+  .about > article {
+    text-align: left;
+  }
+
+  .btn-switch {
+    position: relative;
+    display: flex;
+    background: var(--first-color);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .btn-switch::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: var(--gray-light-color);
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: var(--box-shadow);
+  }
+
+  .btn-switch.is-active {
+    background: #7d325c;
+  }
+  .btn-switch.is-active::after {
+    right: 0;
+    left: unset;
+  }
+
+  .btn-switch > span {
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .btn-switch  > span > svg {
+    fill: var(--gray-light-color);
+    width: 16px;
+    height: 16px;
+  }
+  .btn-switch.is-active > span > svg{
+    fill: var(--second-color);
+    width: 16px;
+    height: 16px;
+  }
+
+
 
   .form {
     width: 768px;
