@@ -424,6 +424,7 @@ cursor: pointer;
     text-align: left;
   }
 
+  /*===== Here is the start of the dark mode button =====*/
   .btn-switch {
     position: relative;
     display: flex;
@@ -477,8 +478,7 @@ cursor: pointer;
     width: 16px;
     height: 16px;
   }
-
-
+  /*===== Here is the end of the dark mode button =====*/
 
   .form {
     width: 768px;
