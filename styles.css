@@ -1,7 +1,7 @@
 /*===== Custom Properties =====*/
 
 :root {
-  --fontBase:'IBM Plex Sans', sans-serif;
+  --fontBase: "IBM Plex Sans", sans-serif;
 
   --Heading1: bold 48px/48px var(--fontBase);
   --Heading2: bold 40px/40px var(--fontBase);
@@ -19,31 +19,29 @@
 
   /*===== Color palette =====*/
 
-  --first-color: #05F240;
-  --second-color: #01260E;
+  --first-color: #04c233;
+  --second-color: #01260e;
   --second-alpha-color: rgba(0, 0, 0, 0.8);
-  --white-color: #FFF6E6;
+  --white-color: #fff6e6;
+  --black-color: #24292f;
   --gray-light-color: #f5f1ea;
-  --gray-color: #66625C;
-  --gray-dark-color: #33312E;
-  --link-color: #05F240;
-  --title-color: #01260E;
-  --text-color: #33312E;
+  --gray-color: #66625c;
+  --gray-dark-color: #33312e;
+  --link-color: #04c233;
+  --title-color: #01260e;
+  --text-color: #33312e;
   --white-alpha-color: rgba(255, 255, 255, 0.8);
   --black-alpha_color: rgba(0, 0, 0, 0.5);
 
   --max-width: 1200px;
   --header-height: 4rem;
-
   --box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-
-
 }
 
 /*===== Reset =====*/
 
 html {
-caret-color: transparent;
+  caret-color: transparent;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: var(--Label);
@@ -72,9 +70,7 @@ a:hover {
   opacity: 0.75;
 }
 
-
-
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -83,9 +79,38 @@ p {
   line-height: 1.5;
 }
 
-/*===== Components =====*/
+/*===== Here is the start of the dark mode button =====*/
+.dark-theme {
+  z-index: 0;
+  bottom: 1vh;
+  left: 1vw;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme:hover {
+  background-color: var(--second-color);
+  color: var(--white-color);
+}
+
+.darkmode {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/*===== Here is the end of the dark mode button =====*/
 
 /*===== Hero Image =====*/
+
 .hero-image {
   background-image: var(--hero-image);
   background-repeat: no-repeat;
@@ -102,7 +127,6 @@ p {
   align-items: center;
   text-align: center;
   background-color: var(--hero-opacity_color);
-
 }
 
 .hero-image_title {
@@ -132,67 +156,61 @@ p {
   background-color: var(--second-color);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.menu a:hover {
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
   }
 
-  .menu.is-active {
+  .menu {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 1.5rem;
     opacity: 1;
     pointer-events: auto;
   }
 
   .menu a {
-    padding: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    color: var(--first-color);
+    padding: 0 1rem;
   }
 
-  .menu a:hover{
-    color: var(--white-color);
-    background-color: var(--first-color);
+  .menu a:hover {
+    background-color: transparent;
   }
 
-  @media screen and (min-width: 1024px) {
-    .menu-btn {
-      display: none;
-    }
-
-    .menu {
-      position: static;
-      flex-direction: row;
-      width: auto;
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .menu a {
-      padding: 0 1rem;
-    }
-
-    .menu a:hover {
-      background-color: transparent;
-    }
-
-    .menu a:last-child {
-      padding-right: 0;
-    }
-
+  .menu a:last-child {
+    padding-right: 0;
   }
+}
 
 /*===== Utilities =====*/
 
-.bg-gray_light {
-  background-color: var(--gray-light-color);
-}
-
-
 .box-shdow-1 {
   --drop-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
-
 }
 
-.btn{
+.btn {
   display: inline-block;
   border-radius: 10rem;
   outline: none;
@@ -205,7 +223,6 @@ p {
   text-align: center;
   color: var(--white-color);
   box-shadow: var(--box-shadow);
-
 }
 
 .container {
@@ -214,21 +231,23 @@ p {
   max-width: var(--max-width);
 }
 
-.card-info h3, p{
+.card-info h3,
+p {
   width: 100%;
   height: auto;
   padding: 0rem 1rem;
+}
+
+.card-info h4 {
+  margin: 0rem 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card-info h4:hover {
   color: var(--second-color);
 }
 
-.card-info h4{
-  margin: 0.5rem 1rem 0;
-}
-.card-info h4:hover{
-  color: var(--second-color);
-}
-
-.form-input{
+.form-input {
   padding-inline-start: 16px;
   padding-inline-end: 16px;
   padding-block-start: 12px;
@@ -236,10 +255,10 @@ p {
   margin-block-start: 8px;
 }
 
-.form .btn  {
-display: block;
-margin: 0 auto;
-cursor: pointer;
+.form .btn {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .form label {
@@ -249,10 +268,9 @@ cursor: pointer;
   margin: 1.5rem 0;
 }
 
-
 .btn input {
   background-color: var(--first-color);
-  color: var(--second-color);
+  color: var(--white-color);
   text-transform: uppercase;
   font-weight: bold;
   border-style: none;
@@ -264,13 +282,11 @@ cursor: pointer;
 }
 
 .section-title {
-  border-bottom: thin solid var(--first-color);
+  border-bottom: thin solid;
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   width: 250px;
-  color: var(--title-color);
   text-align: center;
-
 }
 
 .sections {
@@ -280,6 +296,7 @@ cursor: pointer;
 .text-center {
   text-align: center;
 }
+
 .text-left {
   text-align: left;
 }
@@ -288,22 +305,14 @@ cursor: pointer;
   text-align: right;
 }
 
-
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) {
   .screen-lg_full {
     width: 100%;
     min-height: 100vh;
   }
+
   .text-lg_center {
     text-align: center;
-  }
-  .text-lg_left {
-    text-align: left;
-  }
-
-  .text-lg_right {
-    text-align: right;
   }
 
 }
@@ -314,13 +323,12 @@ cursor: pointer;
   filter: grayscale(1);
 }
 
-
 /*===== Site Styles =====*/
 
 .about > article {
   margin-bottom: 2rem;
+  text-align: center;
 }
-
 
 .footer {
   display: block;
@@ -356,23 +364,15 @@ cursor: pointer;
 .portfolio-card {
   display: block;
   text-decoration: none;
-  margin: 1rem 1rem;
+  margin: 1.5rem 0rem;
   padding-bottom: 0.5rem;
-  background-color: var(--gray-light-color);
   box-shadow: var(--box-shadow);
 }
-
-
 
 .skills-card {
   margin: 1rem auto;
   padding: 1rem;
   text-align: center;
-}
-
-
-.skills-card h3 {
-  color: var(--title-color)
 }
 
 .skills-card svg {
@@ -381,13 +381,7 @@ cursor: pointer;
   fill: var(--first-color);
 }
 
-  .card-info h3, p{
-  margin: 0;
-
-}
 @media screen and (min-width: 768px) {
-
-
   .portfolio > .container {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -405,19 +399,22 @@ cursor: pointer;
     justify-content: space-between;
     align-content: center;
   }
+
   .skills .section-title {
     grid-column: span 2;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-
   .about {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-between;
     align-content: center;
+  }
+
+  .about > article {
+    text-align: left;
   }
 
   .form {
@@ -430,7 +427,6 @@ cursor: pointer;
     position: sticky;
     top: 0;
     padding: 0.5rem;
-
   }
 
   .skills > .container {
@@ -440,5 +436,4 @@ cursor: pointer;
   .skills .section-title {
     grid-column: span 2;
   }
-
 }
