@@ -35,7 +35,7 @@
 
   --max-width: 1200px;
   --header-height: 4rem;
-  --box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*===== Reset =====*/
@@ -137,8 +137,9 @@ p {
 /*===== Menu =====*/
 
 .menu-btn {
-  background-color: var(--second-color);
+  margin-inline-start: auto;
   border: 0;
+  background-color: var(--second-color);
   cursor: pointer;
 }
 
