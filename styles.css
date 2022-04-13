@@ -79,23 +79,106 @@ p {
   line-height: 1.5;
 }
 
+/*===== Contact Form =====*/
+
+.contact__form {
+  margin: 2rem auto;
+  padding: 1rem 0;
+  max-width: 800px;
+}
+
+.contact__form > * {
+  padding: 0.5rem;
+  margin: 2rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact__form input,
+.contact__form textarea {
+  font-size: 0.85rem;
+  font-family: var(--fontBase);
+}
+
+.contact__form input {
+  border: 0;
+  border-bottom: thin solid var(--gray-dark-color);
+}
+
+.contact__form textarea {
+  border: thin solid var(--gray-dark-color);
+  resize: none;
+}
+
+.contact__form input[type="submit"] {
+  display: block;
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.contact__form input[type="submit"]:hover {
+  opacity: 0.75;
+}
+
+.contact__form *::placeholder {
+  color: var(--gray-dark-color);
+}
+
+/*===== Modal Windowo =====*/
+
+.modal#thank:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .contact__form textarea,
+  .contact__form-spinner {
+    grid-column: span 2;
+  }
+
+  .contact__form input[type="submit"] {
+    margin-left: 0;
+  }
+
+}
+
+.contact__form-response {
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.contact__form-response svg {
+  margin-top: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  stroke: var(--first-color);
+}
+
 /*===== Here is the start of the dark mode button =====*/
 .dark-theme {
   z-index: 0;
-  bottom: 1vh;
-  left: 1vw;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   font-size: 1rem;
   font-weight: bold;
-  background-color: var(--first-color);
-  color: var(--second-color);
+  background-color: var(--second-color);
   cursor: pointer;
   outline: 0;
   border: 0;
+  margin-inline-start: auto;
   transition: all 0.3s ease-out;
 }
+
+
 
 .dark-theme:hover {
   background-color: var(--second-color);
@@ -134,17 +217,40 @@ p {
   color: var(--hero-text_color);
 }
 
+/*===== Loader / Spinner =====*/
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact__form-spinner {
+  width: 6vw;
+  height: 6vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 0.5vw solid rgba(0, 0, 0, 0.3);
+  border-top-color: var(--first-color);
+  animation: spinner 1s ease-out infinite;
+}
+
+
 /*===== Menu =====*/
 
 .menu-btn {
-  margin-inline-start: auto;
   border: 0;
   background-color: var(--second-color);
   cursor: pointer;
 }
 
 .menu-btn svg {
-  fill: var(--first-color);
+  stroke: var(--first-color);
 }
 
 .menu {
@@ -178,6 +284,29 @@ p {
   background-color: var(--first-color);
 }
 
+
+
+/*===== Modal Window =====*/
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+  background-color: var(--black-alpha_color);
+  color: var(--first-color);
+}
+
+
+
 @media screen and (min-width: 1024px) {
   .menu-btn {
     display: none;
@@ -204,6 +333,9 @@ p {
     padding-right: 0;
   }
 }
+
+
+
 
 /*===== Utilities =====*/
 
@@ -383,6 +515,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+
   .portfolio > .container {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -416,6 +549,16 @@ p {
 
   .about > article {
     text-align: left;
+  }
+.dark-theme {
+  margin-left: 25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .dark-theme {
+    margin-left: 38rem;
+  }
+
   }
 
   .form {

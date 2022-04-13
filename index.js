@@ -2,13 +2,13 @@
 
 import hamburgerMenu from "./menuHamburger.js";
 import darkTheme from "./darkMode.js";
-import form from "./form.js";
+import contactFormSubmit from "./form.js";
 
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".menu-btn", ".menu", ".menu a");
+  contactFormSubmit()
 });
 
-form("#form")
 darkTheme(".dark-theme", "darkmode");
