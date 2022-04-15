@@ -164,18 +164,11 @@ p {
 
 /*===== Here is the start of the dark mode button =====*/
 .dark-theme {
-  z-index: 0;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  font-size: 1rem;
-  font-weight: bold;
   background-color: var(--second-color);
   cursor: pointer;
   outline: 0;
   border: 0;
   margin-inline-start: auto;
-  transition: all 0.3s ease-out;
 }
 
 
@@ -550,16 +543,13 @@ p {
   .about > article {
     text-align: left;
   }
+
 .dark-theme {
-  margin-left: 25rem;
+  display: flex;
+  order: 1;
 }
 
-@media screen and (min-width: 1440px) {
-  .dark-theme {
-    margin-left: 38rem;
-  }
 
-  }
 
   .form {
     width: 768px;
@@ -581,3 +571,11 @@ p {
     grid-column: span 2;
   }
 }
+
+
+@media screen and (min-width: 1440px) {
+  .dark-theme {
+  order: 1;
+  }
+
+  }
