@@ -230,18 +230,20 @@
 				pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
 
 			<textarea name="message" placeholder="Write your message*" cols="30" rows="7" required></textarea>
-			<div class="contact__form-spinner text-center none"></div>
-				<input class="btn" type="submit" value="Send Message">
+			<input class="btn" type="submit" value="Send Message">
 		</form>
-			<!--Modal Window -->
+		<!--Modal Window -->
 		<article id="thank" class="modal">
 			<div class="modal__content">
 				<article class="contact__form-response">
-					<h3>Thanks for writing</h3>
-					<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7 12.5L10 15.5L17 8.5" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					<div class="contact__form-spinner text-center none"></div>
+					<div class="form__response-text none">
+						<h3>Thanks for writing</h3>
+						<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 12.5L10 15.5L17 8.5" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					</div>
 				</article>
 			</div>
 		</article>
