@@ -26,7 +26,7 @@ $form.addEventListener("submit",(e) => {
   .catch(err=> {
     console.log(err);
     let message = err.statusText || "Se origíno un error al enviar, intenta nuevamente :)"
-    $response.querySelector("h3").innerHTML = `Error${err.status}: ${message}`;
+    $response.querySelector(".form__response-text").innerHTML = `Error${err.status}: ${message}`;
   }).finally(()=> {
     $spinner.classList.add("none");
     $text.classList.remove("none");
