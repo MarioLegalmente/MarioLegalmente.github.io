@@ -20,10 +20,10 @@
   /*===== Color palette =====*/
 
   --first-color: #04c233;
-  --second-color: #01260e;
+  --second-color: #000F06;
   --second-alpha-color: rgba(0, 0, 0, 0.8);
   --white-color: #fff6e6;
-  --black-color: #24292f;
+  --black-color: #000803;
   --gray-light-color: #f5f1ea;
   --gray-color: #66625c;
   --gray-dark-color: #33312e;
@@ -35,7 +35,7 @@
 
   --max-width: 1200px;
   --header-height: 4rem;
-  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*===== Reset =====*/
@@ -44,7 +44,6 @@ html {
   caret-color: transparent;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: var(--Label);
   font-family: var(--fontBase);
   margin: 0;
 }
@@ -53,6 +52,11 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--Heading1);
 }
 
 body {
@@ -366,6 +370,8 @@ p {
 .card-info h4 {
   margin: 0rem 1rem 0.5rem;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: end;
 }
 
 .card-info h4:hover {
