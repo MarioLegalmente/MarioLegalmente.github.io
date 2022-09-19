@@ -38,8 +38,8 @@ Si deseas tener una copia  de este proyecto en tu máquina local para propósito
 
 ## Install
 
- Ház un fork desde github al [repositorio](git@github.com:origimario/my-portfolio.git) o puedes clonar en tu maquina local si ejecuta en su Interfaz de línea de comando
-```git@github.com:origimario/my-portfolio.git``` 
+ Ház un fork desde github al [repositorio](git@github.com:sanmarito/sanmarito.github.io.git) o puedes clonar en tu maquina local si ejecuta en su Interfaz de línea de comando
+```git@github.com:sanmarito/sanmarito.github.io.git``` 
 
 
 Tecnologías y herramientas utilizadas para el desarrollo
@@ -49,20 +49,18 @@ Tecnologías y herramientas utilizadas para el desarrollo
   - CSS
   
   - Javascript
+  
+  - Unsplash
+  
+  -formspree
 
 
 ## Credits
 
-Mario Fernandez S
+Mario Fernandez Serrano
 
 ## License
 Este proyecto está bajo la Licencia (MIT License).
 
-
-## Thanks
-
-Form: [Formspree](https://formspree.io/)  
-
-##
 
 A product designed and developed with much ❤  
