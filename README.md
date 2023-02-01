@@ -25,7 +25,7 @@ Functional portfolio that shows some projects in which I have participated.
  
  ## Disclaimer
 
-Si deseas tener una copia  de este proyecto en tu máquina local para propósitos de desarrollo y pruebas, lee las sigiente instruciones. 
+Si deseas tener una copia de este proyecto en tu máquina local para propósitos de desarrollo y pruebas, lee las siguientes instrucciones. 
  
  
 
@@ -39,7 +39,7 @@ Si deseas tener una copia  de este proyecto en tu máquina local para propósito
 ## Install
 
  Ház un fork desde github al [repositorio](git@github.com:sanmarito/sanmarito.github.io.git) o puedes clonar en tu maquina local si ejecuta en su Interfaz de línea de comando
-```git@github.com:sanmarito/sanmarito.github.io.git``` 
+```git@github.com:sanmarito/MarioLegalmente.github.io.git``` 
 
 
 Tecnologías y herramientas utilizadas para el desarrollo
@@ -49,6 +49,8 @@ Tecnologías y herramientas utilizadas para el desarrollo
   - CSS
   
   - Javascript
+  
+  - Git
   
   - Unsplash
   
