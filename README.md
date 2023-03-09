@@ -9,7 +9,7 @@ Esto me ha permitido conocer y colaborar en las comunidades de el ecosistema tec
 
 - 😊 Pronouns: He/him
 - 
-- 📫 How to reach me: DM [@iambolajiayo](https://twitter.com/marfernans).
+- 📫 How to reach me: DM [@marfernans](https://twitter.com/marfernans).
 - 
 - 💙 Fun fact: I'm in a blissful relationship [with Pachamama]().
 
