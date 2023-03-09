@@ -1,6 +1,6 @@
 # Bienvenidos 👋🏾
 
-[![Website Badge](https://img.shields.io/badge/-Portfolio-3B7E00?style=for-the-badge&logo=Google-Chrome&logoColor=white&link=https://marfernans.github.io/)](https://marfernans.github.io/) [![CF Badge](https://img.shields.io/badge/-Initiative-3B7E00?style=for-the-badge&logo=Hashnode&logoColor=white&link=https://blog.bolajiayodeji.com)](https://github.com/Futuro-Creativo/futuro-creativo) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-3B7E00?style=for-the-badge&logo=Linkedin&logoColor=white&link=)](https://www.linkedin.com/in/marioferser/) [![Twitter Badge](https://img.shields.io/badge/-@iambolajiayo-3B7E00?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/marfernans)](https://twitter.com/marfernans)
+[![Website Badge](https://img.shields.io/badge/-Portfolio-3B7E00?style=for-the-badge&logo=Google-Chrome&logoColor=white&link=https://marfernans.github.io/)](https://marfernans.github.io/) [![CF Badge](https://img.shields.io/badge/-Initiative-3B7E00?style=for-the-badge&logo=Hashnode&logoColor=white&link=https://blog.bolajiayodeji.com)](https://github.com/Futuro-Creativo/futuro-creativo) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-3B7E00?style=for-the-badge&logo=Linkedin&logoColor=white&link=)](https://www.linkedin.com/in/marioferser/) [![Twitter Badge](https://img.shields.io/badge/-@marfernans-3B7E00?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/marfernans)](https://twitter.com/marfernans)
 
 ## Desarrollador front-end.
 
